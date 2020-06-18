@@ -1,0 +1,133 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-image: linear-gradient(240deg,rgb(87, 87, 230),pink);
+  }
+.full{
+    width: 100%;
+    height: auto;
+   
+}
+button{
+    background-color: transparent;
+    width: 80px;
+    border: 0;
+   
+}
+.fea{
+    position: absolute;
+    left: 75%;
+    top: 45%;
+    transform: translate(-50%);
+    text-align: center;
+
+}
+.mob{
+    position: absolute;
+
+    height: 100%;
+    
+    opacity: 1;
+    background-color: transparent;
+        
+}
+.mob1{
+   width: 650px;
+   transform: rotateZ(-10deg) ;
+
+}
+/* div{
+   position: absolute; 
+   left: 10%;
+   transform: rotate(90deg);
+   transition-duration: 1s;
+} */
+.lists{
+
+    
+    width: 50%;
+    height: 100%; 
+    position: absolute;
+    background-color:transparent;
+   
+    transition-duration: 1s;
+        /* transform: rotateZ(90deg);
+     */
+}
+hr {
+    background: linear-gradient(to right,pink,transparent);
+    height: 3px;
+    border: transparent;
+  }
+  i{
+    width:   20px;
+    height: 20px;
+  }
+.li1{
+
+    font-family: sans-serif;
+    background-color: transparent;
+    width: 150px;
+    height: auto;
+    border-radius: 100%;
+    text-align: center;
+    position: absolute;   
+    right: 45%;
+    top:0%;
+    transform: rotate(0deg) ;
+    transition-duration: 1s;
+    display: none;
+   
+}
+.li2{
+    font-family: sans-serif;
+    background-color:  transparent;
+    width: 150px;
+    height: auto;
+    border-radius: 100%;
+    text-align: center;
+    position: absolute;   
+    right:0%;
+    top:40%;
+    transform: rotate(0deg) ;
+    transition-duration: 1s;
+    display: block;
+}
+.li3{
+    font-family: sans-serif;
+    background-color:  transparent;
+    width: 150px;
+    height: auto;
+    border-radius: 100%;
+    text-align: center;
+    position: absolute;   
+    left:0%;
+    top:40%;
+    transform: rotate(0deg) ;
+    transition-duration: 1s;
+    display:none;
+}
+.li4{
+    font-family: sans-serif;
+    background-color:  transparent;
+    width: 150px;
+    height: auto;
+    border-radius: 100%;
+    text-align: center;
+    position: absolute;   
+    right:45%;
+    bottom:0%;
+    transform: rotate(0deg) ;
+    transition-duration: 1s;
+    display: none;
+}
+
+button:hover{
+    transform: scale(280%);
+}
+
+
+
+
+

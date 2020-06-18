@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="full" style="font-size: 24px;;">
+      
+    <div class="lists" id="lis">
+   <div id="list" class="li1"><i class="fa fa-camera-retro fa-2X"></i>
+  <h3>HD Camera 64MP</h3>
+  <hr>
+  <p>High clarity camera</p>
+  </div> 
+   <div id="list1" class="li2"><i class="fa fa-mobile fa-2X"></i>
+    <h3>6'5 inch Full Display</h3>
+    <hr>
+    <p>Full Touch display</p>
+    </div> 
+   <div id="list2" class="li3"><i class="fa fa-hdd-o fa-2X"></i>
+    <h3>124GB RAM 16GB ROM</h3>
+    <hr>
+    <p>More Storage Available </p>
+    </div> 
+   <div id="list3" class="li4"><i class="fa fa-battery-full fa-2X"></i>
+    <h3>5600 MGH Battery</h3>
+    <hr>
+    <p>Last for about 3days</p>
+    </div> </div> 
+</div> 
+<div class="mob">
+  <img src="mob.png" alt="" class="mob1">
+        </div>
+<div class="fea">
+       <button id="but"><i class="fa fa-chevron-up"></i></button>
+       <h1>Features</h1>
+       <button id="but2"><i class="fa fa-chevron-down"></i></button>
+   </div></div>
+
+<script>
+var rotated = false;
+
+var lis=document.getElementById("list");
+var lis1=document.getElementById("list1");
+var lis2=document.getElementById("list2");
+var lis3=document.getElementById("list3");
+var content = document.getElementById("lis");
+var btn = document.getElementById("but");
+var btn2 = document.getElementById("but2");
+var rot = 90;
+var rot2=180;
+var rot3=0;
+var t;
+var w=70,h=30;
+var c=0;
+btn2.addEventListener("click", function() {
+    c++;
+      rot += 90;
+  rot2 +=90;
+  rot3 +=90;
+     content.style = 'transform: rotate(' + rot + 'deg)';
+    if(c==1){
+      console.log(c);
+      
+      lis.style='display:block;transform: rotate(' + rot2 + 'deg)';
+      lis1.style='display:none;transform: rotate(' + rot3 + 'deg)';
+      lis2.style='display:none;transform: rotate(' + rot3 + 'deg)';
+      lis3.style='display:none;transform: rotate(' + rot2 + 'deg)';
+    }
+    if(c==4){
+      console.log(c);
+      
+      lis1.style='display:block;transform: rotate(' + rot3 + 'deg)';
+      lis.style='display:none;transform: rotate(' + rot2 + 'deg)';
+      lis2.style='display:none;transform: rotate(' + rot3 + 'deg)';
+      lis3.style='display:none;transform: rotate(' + rot2 + 'deg)';
+      c=0;
+    }
+    if(c==3){
+      console.log(c);
+      
+      lis3.style='display:block;transform: rotate(' + rot2 + 'deg)';
+      lis1.style='display:none;transform: rotate(' + rot3 + 'deg)';
+      lis2.style='display:none;transform: rotate(' + rot3 + 'deg)';
+      lis.style='display:none;transform: rotate(' + rot2 + 'deg)';
+    }
+    if(c==2){
+      console.log(c);
+      
+      lis2.style='display:block;transform: rotate(' + rot3 + 'deg)';
+      lis1.style='display:none;transform: rotate(' + rot3 + 'deg)';
+      lis.style='display:none;transform: rotate(' + rot2 + 'deg)';
+      lis3.style='display:none;transform: rotate(' + rot2 + 'deg)';
+    
+    }
+   
+ 
+  //height:'+h+'%;width:'+w+'%';
+
+  // lis.style = 'transform: rotate(' + rot2 + 'deg)';
+  // lis1.style = 'transform: rotate(' + rot3 + 'deg)';
+  // lis2.style = 'transform: rotate(' + rot3 + 'deg)';
+  // lis3.style = 'transform: rotate(' + rot2 + 'deg)';
+
+
+ 
+  
+});
+rot-=90;
+btn.addEventListener("click", function() {
+    
+    
+   
+    rot-=90;
+    rot2 -=90;
+  rot3 -=90;
+  if(c==0){
+    c=4;
+  }
+  content.style = 'transform: rotate(' + rot + 'deg)';
+  // lis.style = 'transform: rotate(' + rot2 + 'deg)';
+  // lis1.style = 'transform: rotate(' + rot3 + 'deg)';
+  // lis2.style = 'transform: rotate(' + rot3 + 'deg)';
+  // lis3.style = 'transform: rotate(' + rot2 + 'deg)';
+    if(c==2){
+      console.log(c);
+      
+      lis.style='display:block;transform: rotate(' + rot2 + 'deg)';
+      lis1.style='display:none;transform: rotate(' + rot3 + 'deg)';
+      lis2.style='display:none;transform: rotate(' + rot3 + 'deg)';
+      lis3.style='display:none;transform: rotate(' + rot2 + 'deg)';
+     
+    }
+    if(c==1){
+      console.log(c);
+      
+      lis1.style='display:block;transform: rotate(' + rot3 + 'deg)';
+      lis.style='display:none;transform: rotate(' + rot2 + 'deg)';
+      lis2.style='display:none;transform: rotate(' + rot3 + 'deg)';
+      lis3.style='display:none;transform: rotate(' + rot2 + 'deg)';
+     // c++;
+      
+      
+    }
+    if(c==4){
+      console.log(c);
+      
+      lis3.style='display:block;transform: rotate(' + rot2 + 'deg)';
+      lis1.style='display:none;transform: rotate(' + rot3 + 'deg)';
+      lis2.style='display:none;transform: rotate(' + rot3 + 'deg)';
+      lis.style='display:none;transform: rotate(' + rot2 + 'deg)';
+      //c++;
+    }
+    if(c==3){
+      console.log(c);
+      
+      lis2.style='display:block;transform: rotate(' + rot3 + 'deg)';
+      lis1.style='display:none;transform: rotate(' + rot3 + 'deg)';
+      lis.style='display:none;transform: rotate(' + rot2 + 'deg)';
+      lis3.style='display:none;transform: rotate(' + rot2 + 'deg)';
+    //c++;
+    }
+c--;
+
+
+});
+</script>
+</body>
+</html>
